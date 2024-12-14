@@ -5,7 +5,8 @@
   ~ All Rights Reserved.
   -->
 
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="sd_overlay_color" tools:ignore="MissingDefaultResource">#aa000000</color>
 
     <color name="system_window_scrim">@color/system_window_scrim_dark</color>
 

@@ -585,10 +585,11 @@
     <string name="ftp_server_writable_title">書き込みを許可</string>
     <string name="settings_title">設定</string>
     <string name="settings_interface_title">外観</string>
-    <string name="settings_locale_title">言語</string>
-    <string name="settings_theme_color_title">テーマカラー</string>
-    <string name="settings_theme_color_summary">アプリ内で優先して使用する色です</string>
-    <string name="settings_material_design_3_title">Material Design 3</string>
+    <string name="settings_primary_color_title">基本色</string>
+    <string name="settings_primary_color_summary">アプリで最も頻繁に表示する色</string>
+    <string name="settings_accent_color_title">アクセントカラー</string>
+    <string name="settings_accent_color_summary">UIの重要な部分の強調に使用する色</string>
+    <string name="settings_material_design_2_title">Material Design 2</string>
     <string name="settings_night_mode_title">夜間モード</string>
     <string-array name="settings_night_mode_entries">
         <item>システム設定に従う</item>

@@ -615,10 +615,11 @@
     <string name="ftp_server_writable_title">Erlaube Schreiben</string>
     <string name="settings_title">Einstellungen</string>
     <string name="settings_interface_title">Benutzeroberfläche</string>
-    <string name="settings_locale_title">Sprache</string>
-    <string name="settings_theme_color_title">Themenfarbe</string>
-    <string name="settings_theme_color_summary">Die am häufigsten vorkommende Farbe in der App</string>
-    <string name="settings_material_design_3_title">Material Design 3</string>
+    <string name="settings_primary_color_title">Primäre Farbe</string>
+    <string name="settings_primary_color_summary">Die Farbe, die in der App am häufigsten vorkommt</string>
+    <string name="settings_accent_color_title">Akzentfarbe</string>
+    <string name="settings_accent_color_summary">Diese Farbe wird verwendet um wichtige Teile der Benutzeroberfläche hervorzuheben</string>
+    <string name="settings_material_design_2_title">Material Design 2</string>
     <string name="settings_night_mode_title">Nachtmodus</string>
     <string-array name="settings_night_mode_entries">
         <item>Nutze Systemeinstellung</item>

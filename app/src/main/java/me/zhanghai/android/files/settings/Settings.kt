@@ -21,6 +21,8 @@ import me.zhanghai.android.files.provider.root.RootStrategy
 import me.zhanghai.android.files.storage.FileSystemRoot
 import me.zhanghai.android.files.storage.PrimaryStorageVolume
 import me.zhanghai.android.files.storage.Storage
+import me.zhanghai.android.files.theme.custom.CustomThemeAccentColor
+import me.zhanghai.android.files.theme.custom.CustomThemePrimaryColor
 import me.zhanghai.android.files.theme.custom.ThemeColor
 import me.zhanghai.android.files.theme.night.NightMode
 import java.io.File

@@ -11,9 +11,9 @@ import android.view.WindowManager
 import androidx.appcompat.app.AppCompatDialogFragment
 import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
-import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import kotlinx.parcelize.Parcelize
 import me.zhanghai.android.files.R
+import me.zhanghai.android.files.compat.AlertDialogBuilderCompat
 import me.zhanghai.android.files.databinding.SetSelinuxContextDialogBinding
 import me.zhanghai.android.files.file.FileItem
 import me.zhanghai.android.files.filejob.FileJobService
@@ -30,7 +30,7 @@ class SetSeLinuxContextDialogFragment : AppCompatDialogFragment() {
     private lateinit var binding: SetSelinuxContextDialogBinding
 
     override fun onCreateDialog(savedInstanceState: Bundle?): Dialog =
-        MaterialAlertDialogBuilder(requireContext(), theme)
+        AlertDialogBuilderCompat.create(requireContext(), theme)
             .setTitle(R.string.file_properties_permission_set_selinux_context_title)
             .apply {
                 binding = SetSelinuxContextDialogBinding.inflate(context.layoutInflater)

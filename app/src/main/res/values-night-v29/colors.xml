@@ -8,4 +8,6 @@
 <resources>
 
     <color name="color_primary_dark_black">@android:color/transparent</color>
+    <color name="system_window_scrim_md2_light">#99FFFFFF</color>
+    <color name="system_window_scrim_md2_dark">#52000000</color>
 </resources>

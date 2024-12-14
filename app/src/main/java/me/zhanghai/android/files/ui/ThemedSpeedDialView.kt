@@ -29,6 +29,7 @@ import com.leinardi.android.speeddial.FabWithLabelView
 import com.leinardi.android.speeddial.SpeedDialActionItem
 import com.leinardi.android.speeddial.SpeedDialView
 import kotlinx.parcelize.Parcelize
+import me.zhanghai.android.files.R
 import me.zhanghai.android.files.compat.createCompat
 import me.zhanghai.android.files.compat.setTextAppearanceCompat
 import me.zhanghai.android.files.util.ParcelableState
@@ -149,13 +150,15 @@ class ThemedSpeedDialView : SpeedDialView {
     ): FabWithLabelView? {
         val context = context
         val isMaterial3Theme = context.isMaterial3Theme
-        val fabImageTintColor = if (isMaterial3Theme) {
-            context.getColorByAttr(androidx.appcompat.R.attr.colorPrimary)
-        } else {
-            context.getColorByAttr(com.google.android.material.R.attr.colorSecondary)
-        }
-        val fabBackgroundColor =
-            context.getColorByAttr(com.google.android.material.R.attr.colorSurface)
+//        val fabImageTintColor = if (isMaterial3Theme) {
+//            context.getColorByAttr(androidx.appcompat.R.attr.colorPrimary)
+//        } else {
+//            context.getColorByAttr(com.google.android.material.R.attr.colorSecondary)
+//        }
+//        val fabBackgroundColor =
+//            context.getColorByAttr(com.google.android.material.R.attr.colorSurface)
+        val fabImageTintColor = context.getColorByAttr(R.attr.colorOnSpeedDialSurface)
+        val fabBackgroundColor = context.getColorByAttr(R.attr.colorSpeedDialSurface)
         val labelColor = context.getColorByAttr(android.R.attr.textColorSecondary)
         val labelBackgroundColor = if (isMaterial3Theme) {
             Color.TRANSPARENT

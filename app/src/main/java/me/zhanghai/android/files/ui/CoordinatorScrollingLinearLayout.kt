@@ -23,7 +23,9 @@ import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.updateLayoutParams
 import androidx.core.view.updatePadding
 import com.google.android.material.appbar.AppBarLayout.ScrollingViewBehavior
+import me.zhanghai.android.files.settings.Settings
 import me.zhanghai.android.files.util.layoutInNavigation
+import me.zhanghai.android.files.util.valueCompat
 
 class CoordinatorScrollingLinearLayout : LinearLayout, AttachedBehavior {
     private var bottomInsets: WindowInsets? = null
@@ -46,7 +48,8 @@ class CoordinatorScrollingLinearLayout : LinearLayout, AttachedBehavior {
     init {
         orientation = VERTICAL
         fitsSystemWindows = true
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O_MR1) {
+        if (Settings.MATERIAL_DESIGN_3.valueCompat
+            && Build.VERSION.SDK_INT >= Build.VERSION_CODES.O_MR1) {
             layoutInNavigation = true
         }
     }

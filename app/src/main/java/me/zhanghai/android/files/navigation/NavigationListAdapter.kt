@@ -27,12 +27,15 @@ import me.zhanghai.android.files.compat.foregroundCompat
 import me.zhanghai.android.files.compat.obtainStyledAttributesCompat
 import me.zhanghai.android.files.compat.setTextAppearanceCompat
 import me.zhanghai.android.files.compat.use
+import me.zhanghai.android.files.compat.getDrawableCompat
 import me.zhanghai.android.files.databinding.NavigationDividerItemBinding
 import me.zhanghai.android.files.databinding.NavigationItemBinding
+import me.zhanghai.android.files.settings.Settings
 import me.zhanghai.android.files.ui.AutoMirrorDrawable
 import me.zhanghai.android.files.ui.SimpleAdapter
 import me.zhanghai.android.files.util.getColorStateListByAttr
 import me.zhanghai.android.files.util.layoutInflater
+import me.zhanghai.android.files.util.valueCompat
 
 class NavigationListAdapter(
     private val listener: NavigationItem.Listener,
